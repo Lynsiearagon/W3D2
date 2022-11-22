@@ -29,7 +29,7 @@ class Board
             row = rand(0...@grid.length)
             col = rand(0...@grid[0].length)
             if @grid[row][col] == []
-                @grid[row][col] = pairs_on_board[i % pairs_on_board.length]
+                @grid[row][col] = Card.new(pairs_on_board[i % pairs_on_board.length])
                 i += 1
             end
         end 

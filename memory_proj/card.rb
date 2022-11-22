@@ -8,9 +8,13 @@ require relative "./game.rb"
 
 class Card
 
-    def initialize()
-        @face_down = face_down
+    attr_accessor :face_down 
+
+    def initialize(char)
+        @face_down = true
     end
+
+
 
     def face_down?(pos)
         if @board[pos[0]][pos[1]] == []
@@ -20,5 +24,7 @@ class Card
         end
     end
 
+
+    #if face_down at firstpos on @grid = false && next chosen pos is == first pos keep revealed
 
 end
