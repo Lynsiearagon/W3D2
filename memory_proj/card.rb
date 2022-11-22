@@ -20,17 +20,5 @@ class Card
         end
     end
 
-    # def place_cards_on_board
-    #     alpha = ("a".."z").to_a
-    #     pairs_on_board = alpha[0...@pairs * 2]
-
-    #     i = 0
-    #     while i < @size
-    #         row = rand(0...@grid.length)
-    #         col = rand(0...@grid[0].length)
-    #         @grid[row][col] = pairs_on_board[i]
-    #         i += 1
-    #     end 
-    # end
 
 end
